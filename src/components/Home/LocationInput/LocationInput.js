@@ -1,16 +1,5 @@
 import React from 'react';
-import TextField from '@material-ui/core/TextField';
 import './LocationInput.css';
-import { withStyles } from "@material-ui/core/styles";
-
-const styles = {
-    input: {
-        color: "black",
-        "& $notchedOutline": {   //add this nested selector
-            borderColor: "red",
-        },
-    }
-};
 
 class LocationInput extends React.Component {
     constructor(props) {
@@ -22,20 +11,20 @@ class LocationInput extends React.Component {
     passInputBack(e) {
         this.props.getInput(e.target.value);
     }
+
+    passSubmitBack = () => {
+        this.props.getSubmit()
+    }
     
+    //TODO: work on using React Place Autocomplete and Google Places Api to create OR figure out PotentialLocations rendering issue and use other API
+
     render() {
-        const { classes } = this.props;
         return(
-            <form className="form" onSubmit={this.passInputBack}>
-                <TextField 
-                    InputProps={{
-                        className: classes.input
-                    }}
-                    onChange={this.passInputBack} value={this.props.input} className="input" id="standard-basic" label="Location"
-                />
+            <form className="form" onSubmit={this.passSubmitBack}>
+                <input onChange={this.passInputBack} value={this.props.input} className="input" placeholder="Enter City"></input>
             </form>
         );
     }
 }
 
-export default withStyles(styles)(LocationInput);
+export default LocationInput;

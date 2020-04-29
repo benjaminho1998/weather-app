@@ -1,8 +1,9 @@
 import React from 'react';
+import './PotentialLocations.css';
 
 function PotentialLocations(props) {
     return(
-        <span>
+        <span className="results-container">
             Hi
         </span>
     );

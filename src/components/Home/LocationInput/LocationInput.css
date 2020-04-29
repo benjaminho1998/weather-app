@@ -1,12 +1,23 @@
 .input {
-    width: 20rem;
+    width: 100%;
     left: 2rem;
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 3rem;
+}
+
+::placeholder {
+    color: white;
 }
 
 .form {
-    width: 25rem;
-    height: 4rem;
-    background-color: #FFF;
-    border-radius: 4px;
-
+    position: relative;
+    top: 43%;
+    left: 2rem;
+    width: 35%;
 }

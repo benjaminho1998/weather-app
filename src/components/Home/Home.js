@@ -8,7 +8,8 @@ class Home extends React.Component {
         super(props);
 
         this.state = {
-            input: ''
+            input: '',
+            potentialLocations: false
         }
     }
 
@@ -16,11 +17,19 @@ class Home extends React.Component {
         this.setState({input: val});
     }
 
+    getSubmit = () => {
+        this.setState({potentialLocations: true});
+    }
+
     render() {
+        console.log(this.state.potentialLocations);
         return(
             <div className="home">
-                <LocationInput input={this.state.input} getInput={this.getInput}/>
-                <PotentialLocations input={this.state.input} />
+                <LocationInput input={this.state.input} getSubmit={this.getSubmit} getInput={this.getInput}/>
+                {this.state.potentialLocations ? 
+                    <PotentialLocations input={this.state.input} /> :
+                    null
+                }
             </div>
         );
     }

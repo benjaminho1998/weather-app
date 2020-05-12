@@ -1,0 +1,11 @@
+.city {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+.city:hover {
+    color: black;
+}
+

@@ -48,7 +48,6 @@ class Home extends React.Component {
     }
 
     render() {
-        console.log(this.state.input);
         return(
             <div className="home">
                 <LocationInput input={this.state.input} getSubmit={this.getSubmit} getInput={this.getInput} error={this.state.err}/>

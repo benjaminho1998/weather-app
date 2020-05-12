@@ -1,7 +1,10 @@
 .results-container {
     position: relative;
-    left: 60%;
-    background-color: white;
-    top: 40vh;
+    left: 55%;
+    color: white;
+    top: 15vh;
     max-width: 30%;
+    border-radius: 5px;
+    max-height: 68%;
+    overflow: auto;
 }

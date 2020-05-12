@@ -1,5 +1,6 @@
 .home {
     height: 100vh;
+    max-width: 100%;
     background-image: url('../../images/home-background.jpg');
     background-attachment: fixed;
     background-size: cover;

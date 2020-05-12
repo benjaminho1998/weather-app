@@ -9,6 +9,8 @@
     background: transparent;
     color: white;
     font-size: 3rem;
+    top: 43%;
+    position: relative;
 }
 
 ::placeholder {
@@ -16,7 +18,7 @@
 }
 
 .form {
-    position: relative;
+    position: fixed;
     top: 43%;
     left: 2rem;
     width: 35%;

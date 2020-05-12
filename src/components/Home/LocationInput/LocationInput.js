@@ -6,22 +6,22 @@ class LocationInput extends React.Component {
         super(props);
 
         this.passInputBack = this.passInputBack.bind(this);
+        this.passSubmitBack = this.passSubmitBack.bind(this);
     }
 
     passInputBack(e) {
         this.props.getInput(e.target.value);
     }
 
-    passSubmitBack = () => {
-        this.props.getSubmit()
+    passSubmitBack(e) {
+        this.props.getSubmit(e);
     }
-    
-    //TODO: work on using React Place Autocomplete and Google Places Api to create OR figure out PotentialLocations rendering issue and use other API
 
     render() {
         return(
             <form className="form" onSubmit={this.passSubmitBack}>
-                <input onChange={this.passInputBack} value={this.props.input} className="input" placeholder="Enter City"></input>
+                <input onChange={this.passInputBack} value={this.props.input} className="input" placeholder="Enter City"></input> <br></br>
+                {this.props.error}
             </form>
         );
     }

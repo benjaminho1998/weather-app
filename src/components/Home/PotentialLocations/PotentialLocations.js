@@ -1,11 +1,18 @@
 import React from 'react';
 import './PotentialLocations.css';
 
-function PotentialLocations(props) {
+const PotentialLocations = (props) => {
+    const cityList = props.cityResults[0];
     return(
-        <span className="results-container">
-            Hi
-        </span>
+        <div className="results-container">
+            {cityList && //Need to check if data is loaded in first !important
+                cityList.map((hi, ind) => 
+                    <div key={ind}>
+                        {hi.formatted}
+                    </div>
+                )
+            }
+        </div>
     );
 }
 

@@ -4,7 +4,8 @@ import City from './City/City';
 
 const PotentialLocations = (props) => {
     const cityList = props.cityResults[0];
-    console.log(cityList);
+
+    //Maps out the individual City components
     return(
         <div className="results-container">
             {cityList && //Need to check if data is loaded in first !important

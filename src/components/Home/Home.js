@@ -47,11 +47,15 @@ class Home extends React.Component {
         });
     }
 
+    passLocationBack = (name, lat, lng) => {
+        this.props.passLocationBack(name, lat, lng);
+    }
+
     render() {
         return(
             <div className="home">
                 <LocationInput input={this.state.input} getSubmit={this.getSubmit} getInput={this.getInput} error={this.state.err}/>
-                <PotentialLocations cityResults={this.state.cityResults} />
+                <PotentialLocations passLocationBack={this.passLocationBack} cityResults={this.state.cityResults} />
             </div>
         );
     }

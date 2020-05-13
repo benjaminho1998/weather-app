@@ -1,0 +1,7 @@
+.weather-outer-container {
+    height: 100%;
+    background-image: url('../../images/weather-display.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+}

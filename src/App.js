@@ -26,7 +26,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App container">
         {this.state.showHome ? <Home passLocationBack={this.getLocation} chosenLocation={this.state.location}/> : <WeatherDisplay location={this.state.location} lat={this.state.lat} lng={this.state.lng}/>}
       </div>
     );

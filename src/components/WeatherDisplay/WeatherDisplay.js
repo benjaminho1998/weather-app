@@ -1,9 +1,15 @@
 import React from 'react';
+import './WeatherDisplay.css';
 
 class WeatherDisplay extends React.Component {
+
+    componentDidMount() {
+        //Call OpenWeather API here
+    }
+
     render() {
         return(
-            <div>
+            <div className="weather-outer-container">
                 {this.props.location}
                 {this.props.lat}
                 {this.props.lng}

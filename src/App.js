@@ -24,10 +24,15 @@ class App extends React.Component {
     })
   }
 
+  goHome = () => {
+    this.setState({showHome: true});
+  }
+
   render() {
     return (
       <div className="App container">
-        {this.state.showHome ? <Home passLocationBack={this.getLocation} chosenLocation={this.state.location}/> : <WeatherDisplay location={this.state.location} lat={this.state.lat} lng={this.state.lng}/>}
+        {this.state.showHome ? <Home passLocationBack={this.getLocation} chosenLocation={this.state.location}/> : 
+        <WeatherDisplay goHome={this.goHome} location={this.state.location} lat={this.state.lat} lng={this.state.lng}/>}
       </div>
     );
   }

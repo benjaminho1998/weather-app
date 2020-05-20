@@ -1,0 +1,36 @@
+.current-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 0.2;
+}
+
+.big {
+    font-size: 3rem;
+}
+
+.bigger {
+    font-size: 4rem;
+}
+
+.biggish {
+    font-size: 1.6rem;
+}
+
+.icon {
+    height: 10rem;
+    width: 10rem;
+}
+
+.left{
+    flex: 0.1;
+    margin-left: 1rem;
+}
+
+.middle {
+    flex: 0.85;
+}
+
+.right {
+    font-size: 1.6rem;
+} 

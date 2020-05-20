@@ -1,0 +1,5 @@
+.daily {
+    flex: 0.25;
+    display: flex;
+    align-items: center;
+}

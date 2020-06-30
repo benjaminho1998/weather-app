@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
-import LocationInput from './LocationInput/LocationInput';
-import PotentialLocations from './PotentialLocations/PotentialLocations';
+import LocationInput from '../LocationInput/LocationInput';
+import PotentialLocations from '../PotentialLocations/PotentialLocations';
 import axios from 'axios';
 
 class Home extends React.Component {

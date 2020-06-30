@@ -1,6 +1,7 @@
 .weather-outer-container {
     height: 100%;
-    background-image: url('../../images/weather-display.jpg');
+    /* background-image: url('../../images/weather-background.jpg'); */
+    background-image: linear-gradient(#ffafbd, #ffc3a0);
     background-attachment: fixed;
     background-size: cover;
     color: white;
@@ -16,26 +17,3 @@
     flex: 10%;
 }
 
-.button {
-    height: 2rem;
-    font-size: large;
-    color: white;
-    width: 10%;
-    background: transparent;
-    height: 3rem;
-    margin-left: 5%;
-    border: 1.5px solid white;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.button:hover {
-    color: orange;
-    border-color: orange;
-}
-
-.button-holder {
-    display: flex;
-    flex: 0.15;
-    align-items: flex-end;
-}

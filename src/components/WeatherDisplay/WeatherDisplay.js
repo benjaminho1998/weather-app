@@ -1,10 +1,10 @@
 import React from 'react';
 import './WeatherDisplay.css';
 import axios from 'axios';
-import Current from './Current/Current';
-import TopBar from './TopBar/TopBar';
-import HourForecast from './HourForecast/HourForecast';
-import DailyForecast from './DailyForecast/DailyForecast';
+import Current from '../Current/Current';
+import TopBar from '../TopBar/TopBar';
+import HourForecast from '../HourForecast/HourForecast';
+import DailyForecast from '../DailyForecast/DailyForecast';
 
 class WeatherDisplay extends React.Component {
     constructor(props) {
@@ -53,11 +53,10 @@ class WeatherDisplay extends React.Component {
         const city = this.props.location.split(",")[0]
         return(
             <div className="weather-outer-container">
-                <TopBar city={city}/>
+                <TopBar goHome={this.goHome} city={city}/>
                 <Current date={this.state.date} data={this.state.current}/>
                 <HourForecast data={this.state.hourForecast} />
                 <DailyForecast data={this.state.dailyForecast} />
-                <div className="button-holder"><button className="button" onClick={this.goHome}>Return</button></div>
             </div>
         );
     }

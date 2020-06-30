@@ -1,6 +1,6 @@
 import React from 'react';
 import './PotentialLocations.css';
-import City from './City/City';
+import City from '../City/City';
 
 class PotentialLocations extends React.Component {
 

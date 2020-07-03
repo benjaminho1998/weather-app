@@ -1,0 +1,61 @@
+.forecast-container {
+    padding: 2%;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    height: 25%;
+    border-radius: 14px 14px 14px 14px;
+    background: linear-gradient(270deg, #F27A54 0%, #A154F2 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.bottom-cont {
+    /* height: 1000px;
+    border-radius: 0px 0px 14px 14px;
+    background-color: blue; */
+}
+
+.filler {
+    height: 100%;
+}
+
+.cont {
+    margin: 3% 15%;
+    height: 70%;
+    color: white;
+}
+
+.big {
+    font-size: 1.7rem;
+}
+
+.bigger {
+    font-size: 2rem;
+}
+
+.biggish {
+    font-size: 1rem;
+}
+
+.icon {
+    height: 10rem;
+    width: 10rem;
+}
+
+.left{
+    flex: 0.1;
+    margin-left: 1rem;
+}
+
+.date {
+    margin-top: 0.5%;
+    margin-left: 36%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.info {
+    width: 20%;
+}

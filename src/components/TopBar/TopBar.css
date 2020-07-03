@@ -1,29 +1,42 @@
 .top {
     display: flex;
     flex: 0.1;
-    font-size: 4rem;
+    font-size: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    justify-content: space-between;
+    justify-content: start;
     align-items: flex-start;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.gradient-text {
+    background: linear-gradient(90deg, #F27A54 0%, #A154F2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
 .button {
-    height: 2rem;
-    font-size: large;
+    font-size: medium;
     color: white;
-    width: 10%;
+    width: 6%;
     background: transparent;
-    height: 3rem;
-    margin-left: 5%;
-    border: 1.5px solid white;
-    border-radius: 4px;
+    height: 2rem;
+    margin-left: 0.3%;
+    border-radius: 14px;
     cursor: pointer;
     margin-top: 0.7%;
+    margin-bottom: 0.7%;
+    border: 0px;
 }
+
+
 
 .button:hover {
     color: orange;
-    border-color: orange;
+}
+
+.city-display {
+    margin-top: 0.5%;
+    margin-left: 38%;
+    font-weight: bold;
 }

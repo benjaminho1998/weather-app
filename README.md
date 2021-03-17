@@ -1,14 +1,11 @@
 # Weather App
 
 ### Description
-I am still currently working on this, but when complete, it will be a web app that displays current and forecasted weather information for a desired location. A song will also be recommended based on the current weather and time.
-
-### How to run
-
-### How to use
+This is a web app where users can input any city and have the weather for the next week displayed for it. 
 
 ### Technologies
 - React.js
 - CSS
-- OpenCage API
+- 3rd Party API's
+- Axios
 
